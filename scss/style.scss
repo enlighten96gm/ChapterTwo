@@ -398,13 +398,12 @@ body {
         }
     }
     &__copyright_and_links {
+        @include font-montserrat;
+
         display: flex;
         justify-content: space-between;
         font-size: 14px;
         line-height: 18px;
-
-        &-copyright {}
-        &-links {}
     }
 }
 
