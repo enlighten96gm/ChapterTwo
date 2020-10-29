@@ -46,6 +46,42 @@ body {
     }
 }
 
+@mixin start-button {
+    @include font-montserrat;
+
+    font-size: 16px;
+    margin: 0;
+    padding: 16px 20px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .btn-main {
+        @include start-button;
+
+        border: none;
+        background: linear-gradient(to right, #FE985B, #FE4FA7);
+        color: white;
+    }
+
+    .btn-secondary {
+        @include start-button;
+
+        border: 1px solid #414141;
+        background: white;
+        color: #414141;
+    }
+
+    .btn-free {
+        @include start-button;
+
+        border: none;
+        background: white;
+        color: #414141;
+    }
+
 // header
 .section-header {
     color: rgb(0, 255, 170);
@@ -133,20 +169,7 @@ body {
                     }
                 }
             }
-            &-button {
-                button {
-                    @include font-montserrat;
-
-                    border: none;
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 16px 20px;
-                    background: linear-gradient(to right, #FE985B, #FE4FA7);
-                    outline: none;
-                    border-radius: 4px;
-                    color: white;
-                }
-            }
+            &-button {}
         }
     }
 }
@@ -243,15 +266,164 @@ body {
 
 
 // founder
-
 // plans
 
+.section-plans {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+
+
+    &__title {
+        font-size: 36px;
+        line-height: 51px;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            margin-bottom: 110px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+           flex-basis: 370px;
+           padding: 60px 45px;
+
+            &_title {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+            &_price {
+                margin-bottom: 26px;
+
+                .prefix {
+                    font-size: 72px;
+                line-height: 86px;
+                font-weight: bold;
+                   color: #fe4fa7;
+                }
+                .postfix {
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: bold;
+                }
+            }
+            &_description {
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 300;
+                margin-bottom: 40px;
+            }
+            &_button {
+            }
+
+            &.active {
+                background-color: #f6fafd;
+            }
+        }
+    }
+}
+
 // plans
-
 // free
 
-// free
+.section-free {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #FE985B, #FE4FA7);
+    padding-bottom: 120px;
+    padding-top: 120px;
 
+    &__title {
+        font-size: 55px;
+        line-height: 60px;
+        font-weight: bold;
+        margin-bottom: 26px;
+    }
+    &__description {
+        @include font-montserrat;
+
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    &__button {}
+}
+
+// free
 // footer
+
+.section-footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__logo {
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 75px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            &+li {
+                margin-left: 60px;
+            }
+            a {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #464646;
+                text-decoration: none;
+
+                &.active {
+                    color: #fe50a6;
+                }
+            }
+        }
+    }
+    &__copyright_and_links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 18px;
+
+        &-copyright {}
+        &-links {}
+    }
+}
+
+.helper-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+        &+li {
+            margin-left: 20px;
+        }
+        a {
+            color: #464646;
+            text-decoration: none;
+        }
+    }
+}
+
 
 // footer
