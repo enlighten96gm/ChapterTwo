@@ -307,7 +307,27 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  color: #414141; }
+
+.section-inner {
+  width: 1180px;
+  margin: 0 auto; }
+
+.description-item__icon {
+  margin-bottom: 20px; }
+
+.description-item__title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold; }
+
+.description-item__text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #6c6c6c; }
 
 .section-header {
   color: #00ffaa;
@@ -382,3 +402,58 @@ body {
         outline: none;
         border-radius: 4px;
         color: white; }
+
+.section-promo {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+.section-promo-1 {
+  display: flex; }
+  .section-promo-1__content, .section-promo-1__video {
+    flex-basis: 50%; }
+  .section-promo-1__content {
+    padding-right: 90px; }
+    .section-promo-1__content .title {
+      font-size: 32px;
+      line-height: 51px;
+      font-weight: bold;
+      margin-bottom: 56px; }
+    .section-promo-1__content .description-item {
+      margin-top: 28px; }
+  .section-promo-1__video img {
+    width: 100%;
+    height: auto; }
+
+.section-promo-2 {
+  display: flex;
+  padding-top: 86px;
+  margin-top: 120px;
+  border-top: 1px solid #e2e2e2;
+  text-align: center; }
+  .section-promo-2 .description-item + .description-item {
+    margin-left: 40px; }
+
+.section-founder {
+  background-color: #f6fafd;
+  padding-top: 34px;
+  padding-bottom: 50px; }
+  .section-founder .section-inner {
+    display: flex; }
+  .section-founder__img {
+    align-self: flex-end;
+    width: 100%;
+    height: auto; }
+  .section-founder__content {
+    align-self: center;
+    padding-left: 50px; }
+    .section-founder__content-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      line-height: 40px; }
+    .section-founder__content-name {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: bold; }
+    .section-founder__content-ost {
+      font-size: 20px;
+      line-height: 29px; }
